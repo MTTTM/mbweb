@@ -1,0 +1,348 @@
+/*
+----------------------���ض���---------------
+*/
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.05, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/*
+   �ڶ���
+  */
+@-webkit-keyframes m2fall3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  35% {
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  38% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  85% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes m2fall1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  35% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes m2fall2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  65% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes m2ball {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+/*
+---------���ع���-------------
+*/
+/*
+---------------����----------------------
+*/
+#loading .ele-man {
+  animation: m1fly 0.2s steps(3, start) 0.5s infinite alternate none;
+  /* Firefox: */
+  -moz-animation: m1fly 0.2s steps(3, start) 0.5s infinite alternate none;
+  /* Safari �� Chrome: */
+  -webkit-animation: m1fly 0.2s steps(3, start) 0.5s infinite alternate none;
+  /* Opera: */
+  -o-animation: m1fly 0.2s steps(3, start) 0.5s infinite alternate none;
+}
+@keyframes m1fly {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 210px 0;
+  }
+}
+@-webkit-keyframes m1fly {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 210px 0;
+  }
+}
+@-moz-keyframes m1fly {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 210px 0;
+  }
+}
+#loading .ele-star1 {
+  animation: m1star 1.5s linear 1.5s infinite alternate backwards;
+  /* Firefox: */
+  -moz-animation: m1star 1.5s linear 1.5s infinite alternate backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m1star 1.5s linear 1.5s infinite alternate backwards;
+  /* Opera: */
+  -o-animation: m1star 1.5s linear 1.5s infinite alternate backwards;
+}
+@keyframes m1star {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#loading .ele-star2 {
+  animation: m1star 1.6s linear 1.6s infinite alternate backwards;
+  /* Firefox: */
+  -moz-animation: m1star 1.6s linear 1.6s infinite alternate backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m1star 1.6s linear 1.6s infinite alternate backwards;
+  /* Opera: */
+  -o-animation: m1star 1.6s linear 1.6s infinite alternate backwards;
+}
+@keyframes m2star {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#loading .ele-star3 {
+  animation: m1star 1.2s linear 0.7s infinite alternate backwards;
+  /* Firefox: */
+  -moz-animation: m1star 1.2s linear 0.7s infinite alternate backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m1star 1.2s linear 0.7s infinite alternate backwards;
+  /* Opera: */
+  -o-animation: m1star 1.2s linear 0.7s infinite alternate backwards;
+}
+@keyframes m2star {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#loading .ele-star4 {
+  animation: m1star1 1.2s linear 0.5s infinite alternate backwards;
+  /* Firefox: */
+  -moz-animation: m1star1 1.2s linear 0.5s infinite alternate backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m1star1 1.2s linear 0.5s infinite alternate backwards;
+  /* Opera: */
+  -o-animation: m1star1 1.2s linear 0.5s infinite alternate backwards;
+}
+@keyframes m2star {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#loading .ele-star5 {
+  animation: m2star 1.2s linear 0.2s infinite alternate backwards;
+  /* Firefox: */
+  -moz-animation: m2star 1.2s linear 0.2s infinite alternate backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m2star 1.2s linear 0.2s infinite alternate backwards;
+  /* Opera: */
+  -o-animation: m2star 1.2s linear 0.2s infinite alternate backwards;
+}
+@keyframes m2star {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#loading .btn-action {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.active .module2 .ele-rocket,
+.active .module2 .ele-man {
+  animation: m2fall1 1s ease-in 0.5s 1 normal forwards;
+  /* Firefox: */
+  -moz-animation: m2fall1 1s ease-in 0.5s 1 normal forwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m2fall1 1s ease-in 0.5s 1 normal forwards;
+  /* Opera: */
+  -o-animation: m2fall1 1s ease-in 0.5s 1 normal forwards;
+}
+.active .module2 .ele-land {
+  animation: m2fall3 1s ease-in 0.5s 1 normal backwards;
+  /* Firefox: */
+  -moz-animation: m2fall3 1s ease-in 0.5s 1 normal backwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m2fall3 1s ease-in 0.5s 1 normal backwards;
+  /* Opera: */
+  -o-animation: m2fall3 1s ease-in 0.5s 1 normal backwards;
+}
+.active .module2 .ele-phone {
+  animation: m2fall2 0.5s ease-in 1s 1 normal forwards;
+  /* Firefox: */
+  -moz-animation: m2fall2 0.5s ease-in 1s 1 normal forwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m2fall2 0.5s ease-in 1s 1 normal forwards;
+  /* Opera: */
+  -o-animation: m2fall2 0.5s ease-in 1s 1 normal forwards;
+}
+.active .module2 .ele-ballon {
+  animation: m2ball 3s ease-in 1.5s infinite normal forwards;
+  /* Firefox: */
+  -moz-animation: m2ball 3s ease-in 1.5s infinite normal forwards;
+  /* Safari �� Chrome: */
+  -webkit-animation: m2ball 3s ease-in 1.5s infinite normal forwards;
+  /* Opera: */
+  -o-animation: m2ball 3s ease-in 1.5s infinite normal forwards;
+}
